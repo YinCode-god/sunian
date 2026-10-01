@@ -1,0 +1,76 @@
+{
+  "provider": {
+    "name": "deepseek",
+    "baseUrl": "https://dsh-api.fanqiesoft.cn/chat/api/ai/openai/v1",
+    "apiKeyRefs": [
+      "SUNIAN_API_KEY",
+      "WETOKENS_DEEPSEEK_API_KEY",
+      "DEEPSEEK_API_KEY",
+      "OPENAI_API_KEY"
+    ],
+    "model": "deepseek-v4-flash-vision-exp",
+    "_note": "model 可被 .env 里的 SUNIAN_MODEL 覆盖；deepseek-v4-flash-vision-exp 是旧名"
+  },
+  "generation": {
+    "temperature": 1,
+    "maxTokens": 4000,
+    "timeoutMs": 120000,
+    "thinkingDisabled": true,
+    "minGapMs": 21000
+  },
+  "history": {
+    "maxTurns": 40
+  },
+  "pacing": {
+    "enabled": true,
+    "minDelayMs": 1000,
+    "maxDelayMs": 5000,
+    "minTypingCps": 6,
+    "maxTypingCps": 11,
+    "betweenMessagesExtraMs": 400
+  },
+  "qq": {
+    "wsUrl": "ws://127.0.0.1:3001",
+    "token": ""
+  },
+  "owner": {
+    "qq": "3410885676",
+    "nickname": "ybh"
+  },
+  "proactive": {
+    "enabled": true,
+    "minPerDay": 1,
+    "maxPerDay": 3,
+    "quietHours": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "checkIntervalMinutes": 30,
+    "minSilentHours": 3
+  },
+  "users": {
+    "3410885676": {
+      "role": "girlfriend",
+      "nickname": "ybh"
+    }
+  },
+  "defaultRole": "friend",
+  "allowStrangers": true,
+  "bot": {
+    "qq": "2096775264",
+    "name": "苏念"
+  },
+  "schedule": {
+    "sleepHour": 1,
+    "wakeHour": 8,
+    "sleepReply": false
+  },
+  "anniversary": {
+    "date": "2025-06-03"
+  }
+}
